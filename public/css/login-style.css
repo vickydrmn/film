@@ -1,0 +1,118 @@
+/* Atur latar belakang dan ukuran halaman */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-image: url("img/Imovie.png"); /* Ganti dengan path gambar yang diinginkan */
+  background-size: cover; /* Mengatur agar gambar menutupi seluruh area */
+  background-position: center; /* Mengatur posisi gambar di tengah */
+  background-repeat: no-repeat; /* Mencegah gambar diulang */
+  background-attachment: fixed; /* Membuat gambar tetap saat menggulir */
+  height: 100vh; /* Mengatur tinggi halaman ke 100% viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container untuk form login */
+.login-container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Warna latar belakang putih dengan transparansi */
+  border-radius: 20px; /* Sudut lebih bulat untuk tampilan yang lebih modern */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Bayangan yang lebih dramatis */
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi untuk efek hover */
+}
+
+.login-container:hover {
+  transform: translateY(-10px); /* Mengangkat container saat hover */
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3); /* Meningkatkan bayangan saat hover */
+}
+
+/* Judul form login */
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600; /* Memberikan ketebalan font */
+}
+
+/* Grup input username dan password */
+.input-group {
+  margin-bottom: 20px; /* Menambah jarak antar grup input */
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input teks */
+.input-group input {
+  width: 100%;
+  padding: 12px; /* Menambah padding untuk kenyamanan */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* Sudut input lebih bulat */
+  font-size: 16px;
+  color: #333;
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Animasi border dan shadow */
+}
+
+.input-group input:focus {
+  border-color: #6a11cb; /* Warna border saat fokus */
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.5); /* Bayangan saat fokus */
+}
+
+/* Tombol login */
+.login-button {
+  width: 112%; /* Pastikan tombol sama lebar dengan input */
+  background-color: #748e63; /* Warna latar belakang tombol */
+  border: none;
+  color: white;
+  padding: 12px 0; /* Menambah padding untuk tombol lebih besar */
+  font-size: 18px; /* Ukuran font lebih besar untuk tombol */
+  border-radius: 10px; /* Sudut tombol lebih bulat */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animasi hover */
+}
+
+.login-button:hover {
+  background-color: #748e63; /* Warna lebih gelap saat hover */
+  transform: translateY(-3px); /* Mengangkat tombol saat hover */
+}
+
+/* Link ke halaman register */
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.register-link a {
+  color: #748e63; /* Warna link yang konsisten */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Animasi perubahan warna */
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+  color: #748e63; /* Mengubah warna saat hover */
+}
+
+/* Responsif: sesuaikan ukuran form di layar kecil */
+@media (max-width: 500px) {
+  .login-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+}
